@@ -2,7 +2,7 @@ import React from 'react'
 import './LandingPage.css'
 import video from '../../assets/background-vid.mp4'
 import logo from '../../assets/star-logo.png'
-
+import { Link } from 'react-router-dom';
 const LandingPage = () => {
 return (
     <div className="landing-page">
@@ -23,7 +23,7 @@ return (
             <h1>Annual Tournament</h1>
             <p>Join us again this year for our exciting starteam annual tournnanet</p>
             <p className="slogan">Together we are stronger! Teamwork is the dream work!</p>
-            <a href="#register" className="btn">Register</a>
+            <Link to="/register" className="btn">Register</Link>
 
 
         </div>

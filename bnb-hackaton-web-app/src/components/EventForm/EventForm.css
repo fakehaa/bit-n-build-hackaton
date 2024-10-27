@@ -1,0 +1,27 @@
+.Event-container {
+    text-align: center;
+}
+
+.event-form {
+    margin: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input, select {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 200px;
+}
+.event-btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.event-btn:hover {
+    background-color: #0056b3;
+}
