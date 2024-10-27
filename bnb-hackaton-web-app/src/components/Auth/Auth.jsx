@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Auth.css'; 
 import logo from '../../assets/star-logo.png'
+import { auth } from './firebase'; 
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
+
 const LoginSignup = () => {
   const [activeTab, setActiveTab] = useState('signup');
   const [formData, setFormData] = useState({
