@@ -11,7 +11,7 @@ return (
                 <img src={logo} alt="Logo" className="logo-image" />
                 <h2 className="logo-text">STARTEAM ENTERPRISES</h2>
             </div>
-    </div>
+        </div>
     <div className="video-background">
         <video autoPlay muted loop id="bg-video">
             <source src={video} type="video/mp4" />
@@ -23,7 +23,7 @@ return (
             <h1>Annual Tournament</h1>
             <p>Join us again this year for our exciting starteam annual tournnanet</p>
             <p className="slogan">Together we are stronger! Teamwork is the dream work!</p>
-            <Link to="/register" className="btn">Register</Link>
+            <Link to="/auth" className="btn">Register</Link>
 
 
         </div>
