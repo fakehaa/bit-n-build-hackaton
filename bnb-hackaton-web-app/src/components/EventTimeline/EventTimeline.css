@@ -1,0 +1,37 @@
+.event-timeline-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .timeline-table {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #6d6d6d;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

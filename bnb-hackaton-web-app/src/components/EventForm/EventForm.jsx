@@ -2,117 +2,115 @@ import React, { useState } from 'react';
 import './EventForm.css';
 
 const EventForm = () => {
-  const [formData, setFormData] = useState({
+const [formData, setFormData] = useState({
     date: '',
     time: '',
     location: '',
     activityStyle: '',
     scoringCriteria: ''
-  });
-  
-  const [events, setEvents] = useState([]);
-
-  const handleChange = (e) => {
+});
+const [events, setEvents] = useState([]);
+const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
-      ...formData,
-      [name]: value,
+        ...formData,
+        [name]: value,
     });
-  };
+};
 
-  const handleSubmit = (e) => {
+    const handleSubmit = (e) => {
     e.preventDefault();
     setEvents([...events, formData]); // Append the new event to the events array
     setFormData({ date: '', time: '', location: '', activityStyle: '', scoringCriteria: '' });
-  };
-
-  return (
+};
+return (
+    
     <div className="event-creation-container">
-      <h1>Create Event</h1>
-      <form onSubmit={handleSubmit} className="event-form">
+        <h1>Create Event</h1>
+        <form onSubmit={handleSubmit} className="event-form">
         <div>
-          <label>Date:</label>
-          <input 
+            <label>Date:</label>
+            <input 
             type="date" 
             name="date" 
             value={formData.date} 
             onChange={handleChange} 
             required 
-          />
+            />
         </div>
         <div>
-          <label>Time:</label>
-          <input 
+            <label>Time:</label>
+            <input 
             type="time" 
             name="time" 
             value={formData.time} 
             onChange={handleChange} 
             required 
-          />
+            />
         </div>
         <div>
-          <label>Location:</label>
-          <input 
+            <label>Location:</label>
+            <input 
             type="text" 
             name="location" 
             value={formData.location} 
             onChange={handleChange} 
             required 
-          />
+            />
         </div>
         <div>
-          <label>Activity Style:</label>
-          <input 
+            <label>Activity Style:</label>
+            <input 
             type="text" 
             name="activityStyle" 
             value={formData.activityStyle} 
             onChange={handleChange} 
             required 
-          />
+            />
         </div>
         <div>
-          <label>Scoring Criteria:</label>
-          <input 
+            <label>Scoring Criteria:</label>
+            <input 
             type="text" 
             name="scoringCriteria" 
             value={formData.scoringCriteria} 
             onChange={handleChange} 
             required 
-          />
+            />
         </div>
-        <button type="submit">Create Event</button>
-      </form>
+            <button type="submit">Create Event</button>
+        </form>
 
       {/* Event Table */}
-      {events.length > 0 && (
+        {events.length > 0 && (
         <div className="events-table">
-          <h2>Scheduled Events</h2>
-          <table>
+            <h2>Scheduled Events</h2>
+            <table>
             <thead>
-              <tr>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Location</th>
-                <th>Activity Style</th>
-                <th>Scoring Criteria</th>
-              </tr>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Activity Style</th>
+                    <th>Scoring Criteria</th>
+                </tr>
             </thead>
             <tbody>
-              {events.map((event, index) => (
+                {events.map((event, index) => (
                 <tr key={index}>
-                  <td>{event.date}</td>
-                  <td>{event.time}</td>
-                  <td>{event.location}</td>
-                  <td>{event.activityStyle}</td>
-                  <td>{event.scoringCriteria}</td>
+                    <td>{event.date}</td>
+                    <td>{event.time}</td>
+                    <td>{event.location}</td>
+                    <td>{event.activityStyle}</td>
+                    <td>{event.scoringCriteria}</td>
                 </tr>
-              ))}
+                ))}
             </tbody>
-          </table>
+            </table>
         </div>
-      )}
+        )}
     </div>
-  );
+);
 };
 
 export default EventForm;
