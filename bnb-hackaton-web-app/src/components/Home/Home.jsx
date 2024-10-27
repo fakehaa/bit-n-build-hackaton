@@ -1,12 +1,12 @@
 import React from 'react'
-import './LandingPage.css'
+import '/src/components/Home/Home.css'
 //import video from '../../assets/background-vid.mp4'
 import logo from '../../assets/star-logo.png'
 import { Link } from 'react-router-dom';
 import video from '/src/assets/background-vid.mp4' 
 
-const LandingPage = () => {
-return (
+const Home = () => {
+  return (
     <div className="landing-page">
         <div className="header">
             <div className="logo-container">
@@ -31,7 +31,7 @@ return (
         </div>
     </div>
     </div>
-    )
+  )
 }
 
-export default LandingPage
+export default Home

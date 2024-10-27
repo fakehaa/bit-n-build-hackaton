@@ -36,7 +36,7 @@ const LoginSignup = () => {
     };
 
     emailjs
-      .send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', emailParams, 'YOUR_USER_ID')
+      .send('service_8sj8yuq', 'template_zgo4xdn', emailParams, 'aqrTMUkuxrvAGzZnb') 
       .then(() => {
         console.log('Corporate ID sent to email.');
         alert('Corporate ID has been sent to your email. Please use it to log in.');
@@ -79,14 +79,6 @@ const LoginSignup = () => {
   };
 
   return (
-    <div className="landing-page">
-      <div className="header">
-        <div className="logo-container">
-          <img src={logo} alt="Logo" className="logo-image" />
-          <h2 className="logo-text">STARTEAM ENTERPRISES</h2>
-        </div>
-      </div>
-
       <div className="login-signup-container">
         <div className="tabs">
           <button
@@ -181,7 +173,7 @@ const LoginSignup = () => {
           </form>
         </div>
       </div>
-    </div>
+    
   );
 };
 

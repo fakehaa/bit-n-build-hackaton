@@ -95,34 +95,5 @@ button[type="submit"] {
     font-family: 'poppins';
   }
   
-.landing-page {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
 
-.header {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    align-items: center;
-}
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.logo-image {
-    height: 50px; 
-    margin-right: 10px; 
-    z-index: 100;
-}  
-.logo-text {
-    font-size: 15pt;
-    color: white;
-    font-weight: bold;
-    z-index: 100;
-}
   
