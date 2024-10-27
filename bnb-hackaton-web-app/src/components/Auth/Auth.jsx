@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Auth.css'; 
 import logo from '../../assets/star-logo.png'
-import { auth } from './firebase'; 
+import { auth } from '../../../firebase/firebase'; 
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 
 const LoginSignup = () => {
@@ -12,6 +12,7 @@ const LoginSignup = () => {
     department: '',
     employeeId: '',
     password: '',
+    email: '', 
     adminPassword: '',
   });
 
