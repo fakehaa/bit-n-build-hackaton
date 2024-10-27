@@ -20,7 +20,7 @@ const handleChange = (e) => {
 
     const handleSubmit = (e) => {
     e.preventDefault();
-    setEvents([...events, formData]); // Append the new event to the events array
+    setEvents([...events, formData]); 
     setFormData({ date: '', time: '', location: '', activityStyle: '', scoringCriteria: '' });
 };
 return (

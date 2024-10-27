@@ -31,6 +31,7 @@ const LoginSignup = () => {
       console.log("Employee Login form submitted", formData);
     } else if (activeTab === 'admin') {
       console.log("Admin Login form submitted", formData);
+
     }
   };
 
@@ -153,7 +154,7 @@ const LoginSignup = () => {
                   onChange={handleChange}
                   required
                 />
-              </div>
+              </div> 
               <button type="submit">Next</button>
             </div>
           )}
