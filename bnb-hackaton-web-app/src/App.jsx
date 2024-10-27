@@ -10,7 +10,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/register" element={<EventForm />} />
+        <Route path="/events" element={<EventForm />} />
         <Route path="/auth" element={<LoginSignup/>}/>
       </Routes>
     </Router>
