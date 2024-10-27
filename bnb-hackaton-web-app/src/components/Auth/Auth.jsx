@@ -5,6 +5,7 @@ import { auth } from './firebase';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 
 const LoginSignup = () => {
+    // fire base attached from here 
   const [activeTab, setActiveTab] = useState('signup');
   const [formData, setFormData] = useState({
     name: '',
@@ -60,7 +61,7 @@ const LoginSignup = () => {
           className={activeTab === 'admin' ? 'active' : ''}
           onClick={() => setActiveTab('admin')}
         >
-          Participant
+          Admin
         </button>
       </div>
 
@@ -68,7 +69,7 @@ const LoginSignup = () => {
         <form onSubmit={handleSubmit}>
           {activeTab === 'signup' && (
             <div className="signup-form">
-              <h2>Admin</h2>
+              <h2>Team Lead Login</h2>
               <div>
                 <label>Name:</label>
                 <input
@@ -132,7 +133,7 @@ const LoginSignup = () => {
 
           {activeTab === 'admin' && (
             <div className="admin-form">
-              <h2>Participant</h2>
+              <h2>Admin</h2>
               <div>
                 <label>Name:</label>
                 <input
@@ -144,11 +145,11 @@ const LoginSignup = () => {
                 />
               </div>
               <div>
-                <label>Employee ID:</label>
+                <label>Password</label>
                 <input
-                  type="text"
-                  name="employeeId"
-                  value={formData.employeeId}
+                  type="password"
+                  name="password"
+                  value={formData.password}
                   onChange={handleChange}
                   required
                 />
